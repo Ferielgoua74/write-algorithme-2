@@ -1,1 +1,12 @@
-
+function getCount(str) { 
+    var vowelsCount = 0;
+    const vowels = ['a', 'e', 'o', 'u', 'i'];
+    for (let char of str) {
+        if (vowels.includes (char)) {
+        vowelsCount++;
+    
+        }
+            }
+   return vowelsCount;
+}
+console.log(getCount("go my code"))
