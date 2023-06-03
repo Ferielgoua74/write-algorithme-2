@@ -1,0 +1,22 @@
+let set1 = [3, 1, 7, 9];
+let set2 = [2, 4, 1, 9, 3];
+let sum1 = 0;
+let sum2 = 0;
+for (let i = 0; i < set1.length; i++) {
+    for (let j = 0; j < set2.length; j++) {
+        if (set1[i] === set2[j]) {
+            sum += (set1[i] + set2[j])
+        }
+    }
+}
+console.log(sum)
+for (let i = 0; i < set1.length; i++) {
+    if (!set2.includes(set1[i])) {
+        sum2 += set1[i]
+    }
+}
+for (let j = 0; j < set2.length; j++) {
+    if (!set2.includes(set2[j]))
+    sum2 += set2[j]
+}
+console.log(sum2)
